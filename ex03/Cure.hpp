@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 10:33:24 by eburnet          ###   ########.fr       */
+/*   Created: 2025/02/06 13:52:57 by eburnet           #+#    #+#             */
+/*   Updated: 2025/02/06 14:42:23 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
-
-Cat::Cat() : Animal()
+class Cure
 {
-	std::cout << "Cat Constructor Called" << std::endl;
-	this->type = "Cat";
-	this->sound = "Meow";
-	this->cerveaux = new Brain();
-}
-
-Cat::~Cat()
-{
-	std::cout << "Cat Destructor Called" << std::endl;
-	delete cerveaux;
-}
+	private:
+		/* data */
+	public:
+		Cure(/* args */);
+		~Cure();
+};

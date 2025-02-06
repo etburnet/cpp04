@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 10:33:24 by eburnet          ###   ########.fr       */
+/*   Created: 2025/02/05 13:14:30 by eburnet           #+#    #+#             */
+/*   Updated: 2025/02/05 13:18:32 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
 
-Cat::Cat() : Animal()
+#include "WrongAnimal.hpp"
+
+WrongAnimal::WrongAnimal(/* args */)
 {
-	std::cout << "Cat Constructor Called" << std::endl;
-	this->type = "Cat";
-	this->sound = "Meow";
-	this->cerveaux = new Brain();
+	std::cout << "WrongAnimal Constructor Called" << std::endl;
 }
 
-Cat::~Cat()
+WrongAnimal::~WrongAnimal()
 {
-	std::cout << "Cat Destructor Called" << std::endl;
-	delete cerveaux;
+	std::cout << "WrongAnimal Desstructor Called" << std::endl;
+}
+
+std::string WrongAnimal::getType() const
+{
+	return (this->type);
+}
+
+void WrongAnimal::makeSound() const
+{
+	std::cout << this->sound << std::endl;
 }

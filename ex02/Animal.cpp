@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 10:33:24 by eburnet          ###   ########.fr       */
+/*   Created: 2025/02/05 11:22:15 by eburnet           #+#    #+#             */
+/*   Updated: 2025/02/05 13:13:13 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "Animal.hpp"
 
-Cat::Cat() : Animal()
+Animal::Animal(/* args */)
 {
-	std::cout << "Cat Constructor Called" << std::endl;
-	this->type = "Cat";
-	this->sound = "Meow";
-	this->cerveaux = new Brain();
+	std::cout << "Animal Constructor Called" << std::endl;
 }
 
-Cat::~Cat()
+Animal::~Animal()
 {
-	std::cout << "Cat Destructor Called" << std::endl;
-	delete cerveaux;
+	std::cout << "Animal Desstructor Called" << std::endl;
+}
+
+std::string Animal::getType() const
+{
+	return (this->type);
+}
+
+void Animal::makeSound() const
+{
+	std::cout << this->sound << std::endl;
 }

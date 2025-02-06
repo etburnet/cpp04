@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 10:33:24 by eburnet          ###   ########.fr       */
+/*   Created: 2025/02/05 13:14:37 by eburnet           #+#    #+#             */
+/*   Updated: 2025/02/05 14:12:40 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#ifndef WRONG_CAT_HPP
+#define WRONG_CAT_HPP
+#include "WrongAnimal.hpp"
+#include <iostream>
+#endif
 
-Cat::Cat() : Animal()
+class WrongCat : public WrongAnimal
 {
-	std::cout << "Cat Constructor Called" << std::endl;
-	this->type = "Cat";
-	this->sound = "Meow";
-	this->cerveaux = new Brain();
-}
-
-Cat::~Cat()
-{
-	std::cout << "Cat Destructor Called" << std::endl;
-	delete cerveaux;
-}
+	private:
+		
+	public:
+		WrongCat();
+		~WrongCat();
+};

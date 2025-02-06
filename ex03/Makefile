@@ -5,17 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/03 11:48:21 by eburnet           #+#    #+#              #
-#    Updated: 2025/02/06 12:40:04 by eburnet          ###   ########.fr        #
+#    Created: 2025/02/06 13:54:35 by eburnet           #+#    #+#              #
+#    Updated: 2025/02/06 13:56:44 by eburnet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Animal
+NAME = recap
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Animal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
+SRCS = AMateria.cpp Character.cpp Cure.cpp Ice.cpp main.c
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = Dog.hpp Cat.hpp Animal.hpp WrongCat.hpp WrongAnimal.hpp Brain.hpp
+HEADERS = AMateria.hpp Character.hpp Cure.hpp Ice.hpp 
 
 all: $(NAME)
 

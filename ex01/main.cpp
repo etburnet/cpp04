@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:24 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 11:43:24 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/07 15:10:30 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 
 int main()
 {
+
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	delete j;//should not create a leak
+	delete i;
+
+	std::cout << std::endl;
 	size_t tab_size = 6;
 	const Animal* Animaux[tab_size];
 	for (size_t i = 0; i < tab_size; i++)

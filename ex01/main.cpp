@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:24 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/07 15:10:30 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/10 15:50:09 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,18 @@ int main()
 	{
 		delete Animaux[k];
 	}
+
+
+/* 	std::cout << std::endl;
+
+
+	const Animal* test(j);
+
+	const Animal* test2;
+
+	test2 = test;
+
+	std::cout << test->getType() << " " << std::endl;
+	std::cout << test2->getType() << " " << std::endl; */
 	return 0;
 }

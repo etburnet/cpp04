@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:17 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/05 13:08:14 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/10 11:10:31 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Animal
 		std::string sound;
 	public:
 		Animal();
+		Animal(const Animal&);
+		Animal& operator=(const Animal&);
 		~Animal();
 		std::string getType() const;
 		void makeSound() const;

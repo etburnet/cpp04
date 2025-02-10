@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 13:14:33 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/05 13:18:18 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/10 11:32:27 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class WrongAnimal
 		std::string sound;
 	public:
 		WrongAnimal();
+		WrongAnimal(const WrongAnimal&);
+		WrongAnimal& operator=(const WrongAnimal&);
 		~WrongAnimal();
 		std::string getType() const;
 		void makeSound() const;

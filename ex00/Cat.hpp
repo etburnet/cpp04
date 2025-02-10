@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:48 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/05 12:43:49 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/10 11:23:31 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ class Cat : public Animal
 		
 	public:
 		Cat();
+		Cat(const Cat&);
+		Cat& operator=(const Cat&);
 		~Cat();
 };

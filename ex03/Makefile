@@ -6,16 +6,16 @@
 #    By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/06 13:54:35 by eburnet           #+#    #+#              #
-#    Updated: 2025/02/06 13:56:44 by eburnet          ###   ########.fr        #
+#    Updated: 2025/02/11 14:09:04 by eburnet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = recap
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = AMateria.cpp Character.cpp Cure.cpp Ice.cpp main.c
+SRCS = AMateria.cpp Character.cpp Cure.cpp Ice.cpp main.c MateriaSource.cpp
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = AMateria.hpp Character.hpp Cure.hpp Ice.hpp 
+HEADERS = AMateria.hpp Character.hpp Cure.hpp Ice.hpp MateriaSource.hpp
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:35:54 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/06 10:30:26 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/10 13:45:30 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ class Brain
 		std::string ideas[100];
 	public:
 		Brain();
+		Brain(const Brain&);
+		Brain& operator=(const Brain&);
 		virtual ~Brain();
 };
 

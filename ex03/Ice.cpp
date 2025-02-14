@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:53:00 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/12 15:50:15 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/14 16:28:10 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ Ice::Ice(const Ice &other) : AMateria()
 
 Ice& Ice::operator=(const Ice &other)
 {
-	this->_type = other._type;
+	if (this != &other)
+		this->_type = other._type;
 	return (*this);
 }
 
@@ -44,5 +45,5 @@ void AMateria::use(ICharacter& target)
 
 AMateria* Ice::clone() const
 {
-	
+	return (new Ice());
 }

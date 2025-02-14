@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:56:17 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/12 15:42:50 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/14 12:06:41 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 class MateriaSource : public IMateriaSource
 {
 	private:
-		AMateria* copy;
+		AMateria* copy[4];
 	public:
 		MateriaSource();
 		MateriaSource(const MateriaSource&);

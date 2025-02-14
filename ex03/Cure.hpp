@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:52:57 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/12 15:50:07 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/13 11:50:41 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ class Cure : public AMateria
 		Cure& operator=(const Cure&);
 		~Cure();
 		AMateria* clone() const;
-
+		void use(ICharacter& target);
+		std::string const & getType() const;
 };
 
 #endif

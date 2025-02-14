@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 11:29:17 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/12 15:50:17 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/14 16:45:20 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,19 @@
 int main()
 {
 	IMateriaSource* src = new MateriaSource();
-	src->learnMateria(new Ice());
-	src->learnMateria(new Cure());
+	AMateria* ice1 = new Ice();
+	AMateria* cure1 = new Cure();
+	AMateria* ice2 = new Ice();
+	AMateria* cure2 = new Cure();
+
+	src->learnMateria(ice1);
+	delete ice1;
+	src->learnMateria(cure1);
+	delete cure1;
+	src->learnMateria(ice2);
+	delete ice2;
+	src->learnMateria(cure2);
+	delete cure2;
 
 	ICharacter* me = new Character("me");
 
@@ -29,13 +40,33 @@ int main()
 	me->equip(tmp);
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
-
+	tmp = src->createMateria("ice");
+	me->equip(tmp);
+	tmp = src->createMateria("cure");
+	me->equip(tmp);
+	
 	ICharacter* bob = new Character("bob");
+	ICharacter* dob = new Character("dob");
 
 	me->use(0, *bob);
 	me->use(1, *bob);
+	me->use(2, *dob);
+	me->use(3, *dob);
+	
+	AMateria *save[4];
+	for (size_t i = 0; i < 4; i++)
+		save[i] = me->getInventaire(i);
+	
+	me->unequip(0);
+	me->unequip(1);
+	me->unequip(2);
+	me->unequip(3);
 
+	for (size_t i = 0; i < 4; i++)
+		delete save[i];
+	
 	delete bob;
+	delete dob;
 	delete me;
 	delete src;
 

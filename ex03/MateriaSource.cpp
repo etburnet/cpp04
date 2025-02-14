@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:56:14 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/12 15:50:48 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/14 16:36:37 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 MateriaSource::MateriaSource()
 {
+	for (size_t i = 0; i < 4; i++)
+		this->copy[i] = NULL;
 }
 
 MateriaSource::MateriaSource(const MateriaSource &other)
@@ -23,21 +25,32 @@ MateriaSource::MateriaSource(const MateriaSource &other)
 
 MateriaSource& MateriaSource::operator=(const MateriaSource &other)
 {
-	this->copy = other.copy;
+	*this->copy = *other.copy;
 	return (*this);
 }
 
 MateriaSource::~MateriaSource()
 {
-	
+	for (int i = 0; i < 4; i++)
+		delete this->copy[i];
 }
 
 void MateriaSource::learnMateria(AMateria *other)
 {
-	this->copy = other->clone();
+	int i = 0;
+
+	while (this->copy[i] != NULL)
+		i++;
+	if (i < 4)
+		this->copy[i] = other->clone();
 }
 
 AMateria* MateriaSource::createMateria(std::string const & type)
 {
-	return (this->copy);
+	for (int i = 0; i < 4; i++)
+	{
+		if (this->copy[i] && this->copy[i]->getType() == type)
+			return this->copy[i]->clone();
+	}
+	return NULL;
 }

@@ -6,14 +6,14 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 13:14:30 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 13:36:05 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/17 12:40:48 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal(/* args */)
+WrongAnimal::WrongAnimal()
 {
 	std::cout << "WrongAnimal Constructor Called" << std::endl;
 }

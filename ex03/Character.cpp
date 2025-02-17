@@ -6,20 +6,16 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:56:25 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/14 16:31:35 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/17 14:50:47 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
 #include <iostream>
 
-Character::Character()
-{
-
-}
-
 Character::Character(std::string _name)
 {
+	std::cout << "Character Constructor Called" << std::endl;
 	this->name = _name;
 	for (int i = 0; i < 4; ++i)
 		inventaire[i] = NULL;
@@ -27,6 +23,7 @@ Character::Character(std::string _name)
 
 Character::Character(const Character &other)
 {
+	std::cout << "Character Copy Constructor Called" << std::endl;
 	Character::operator=(other);
 }
 
@@ -49,10 +46,9 @@ Character& Character::operator=(const Character &other)
 
 Character::~Character()
 {
+	std::cout << "Character Destructor Called" << std::endl;
 	for (int i = 0; i < 4; ++i)
-	{
 		delete this->inventaire[i];
-	}
 }
 
 std::string const & Character::getName() const
@@ -66,21 +62,30 @@ void Character::equip(AMateria* m)
 	while (i < 4 && inventaire[i] != NULL)
 		i++;
 	if (i < 4)
+	{
+		// std::cout << "Equip " << i << std::endl;
 		inventaire[i] = m;
+	}
 	else
-		std::cerr << "Inventory is full." << std::endl;
+		std::cout << "Inventory is full." << std::endl;
 }
 
 void Character::unequip(int idx)
 {
 	if (idx >= 0 && idx < 4)
+	{
+		// std::cout << "Unequip" << std::endl;
 		this->inventaire[idx] = NULL;
+	}
 }
 
 void Character::use(int idx, ICharacter& target)
 {
 	if (idx >= 4 || this->inventaire[idx] == NULL)
+	{
+		std::cout << "RETURN" << std::endl;
 		return ;
+	}
 	this->inventaire[idx]->use(target);
 }
 

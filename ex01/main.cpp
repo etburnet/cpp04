@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:24 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/11 11:49:33 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/17 12:42:17 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 
 int main()
 {
-
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	delete i;

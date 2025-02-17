@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:56:27 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/14 13:02:19 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/17 13:54:03 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ class Character : public ICharacter
 		std::string name;
 		AMateria* inventaire[4];
 	public:
-		Character();
 		Character(std::string _name);
 		Character(const Character&);
 		Character& operator=(const Character&);

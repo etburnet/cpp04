@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:17 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 11:10:31 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/17 11:33:27 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 
 class Animal
 {
-	private:
-		
 	protected:
 		std::string type;
 		std::string sound;

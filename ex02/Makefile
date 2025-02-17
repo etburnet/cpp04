@@ -6,16 +6,16 @@
 #    By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/03 11:48:21 by eburnet           #+#    #+#              #
-#    Updated: 2025/02/06 12:42:53 by eburnet          ###   ########.fr        #
+#    Updated: 2025/02/17 13:16:37 by eburnet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Animal
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Animal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
+SRCS = AAnimal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = Dog.hpp Cat.hpp Animal.hpp WrongCat.hpp WrongAnimal.hpp Brain.hpp
+HEADERS = Dog.hpp Cat.hpp AAnimal.hpp WrongCat.hpp WrongAnimal.hpp Brain.hpp
 
 all: $(NAME)
 

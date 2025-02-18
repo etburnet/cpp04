@@ -6,15 +6,13 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:51 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 12:41:07 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:46:17 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-#define DOG_HPP
+#pragma once
 #include "Animal.hpp"
 #include <iostream>
-#endif
 
 class Dog : public Animal
 {

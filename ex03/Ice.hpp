@@ -6,12 +6,11 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:53:02 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 13:32:48 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:48:29 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICE_HPP
-#define ICE_HPP
+#pragma once
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 #include <string>
@@ -28,5 +27,3 @@ class Ice : public AMateria
 		~Ice();
 		AMateria* clone() const;
 };
-
-#endif

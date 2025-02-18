@@ -6,14 +6,13 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:35:54 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 13:45:30 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:46:48 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <iostream>
 #include <string>
-#ifndef BRAIN_HPP
-#define BRAIN_HPP
 
 class Brain
 {
@@ -25,5 +24,3 @@ class Brain
 		Brain& operator=(const Brain&);
 		virtual ~Brain();
 };
-
-#endif

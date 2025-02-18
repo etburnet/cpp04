@@ -6,12 +6,11 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:52:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/14 14:18:04 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:48:35 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICHARACTER_HPP
-#define ICHARACTER_HPP
+#pragma once
 #include "AMateria.hpp"
 
 class ICharacter
@@ -24,5 +23,3 @@ class ICharacter
 		virtual void use(int idx, ICharacter& target) = 0;
 		virtual AMateria *getInventaire(int idx) = 0;
 };
-
-#endif

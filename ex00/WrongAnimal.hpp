@@ -6,14 +6,13 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 13:14:33 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 12:40:53 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:46:25 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <string>
 #include <iostream>
-#ifndef WRONG_ANIMAL_HPP
-#define WRONG_ANIMAL_HPP
 
 
 class WrongAnimal
@@ -29,5 +28,3 @@ class WrongAnimal
 		std::string getType() const;
 		void makeSound() const;
 };
-
-#endif

@@ -6,13 +6,12 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:42:41 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 13:24:57 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/18 13:48:08 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <string>
-#ifndef AMATERIA_HPP
-#define AMATERIA_HPP
 class ICharacter;
 
 class AMateria
@@ -29,5 +28,3 @@ class AMateria
 		virtual AMateria* clone() const = 0;
 		virtual void use(ICharacter& target);
 };
-
-#endif

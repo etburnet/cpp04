@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:49 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 13:33:57 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/19 15:33:01 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,9 @@ Dog::~Dog()
 {
 	std::cout << "Dog Destructor Called" << std::endl;
 	delete cerveaux;
+}
+
+Brain* Dog::getBrain()
+{
+	return(this->cerveaux);
 }

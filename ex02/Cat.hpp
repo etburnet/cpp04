@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:48 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:47:39 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/19 16:05:56 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ class Cat : public Animal
 		Cat(const Cat&);
 		Cat& operator=(const Cat&);
 		virtual ~Cat();
+		Brain* getBrain();
 };

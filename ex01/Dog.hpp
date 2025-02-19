@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:51 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:47:00 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/19 14:12:17 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ class Dog : public Animal
 		Dog(const Dog&);
 		Dog& operator=(const Dog&);
 		virtual ~Dog();
+		Brain* getBrain();
 };
 

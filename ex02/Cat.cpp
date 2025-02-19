@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 11:51:30 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/19 15:32:47 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,9 @@ Cat::~Cat()
 {
 	std::cout << "Cat Destructor Called" << std::endl;
 	delete cerveaux;
+}
+
+Brain* Cat::getBrain()
+{
+	return(this->cerveaux);
 }

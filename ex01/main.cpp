@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:24 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 12:42:17 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/02/19 16:05:25 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,23 @@ int main()
 	std::cout << test.getType() << " " << std::endl;
 	std::cout << test1.getType() << " " << std::endl;
 	std::cout << test2.getType() << " " << std::endl;
+
+	chat.getBrain()->setIdea("coucou");
+	chat.getBrain()->setIdea("hey");
+
+	std::cout << chat.getBrain()->getIdea(0) << std::endl;
+	std::cout << chat.getBrain()->getIdea(1) << std::endl;
+
+	Cat chat2(chat);
+
+	chat.getBrain()->setIdea("cv");
+
+	std::cout << chat.getBrain()->getIdea(0) << std::endl;
+	std::cout << chat.getBrain()->getIdea(1) << std::endl;
+	std::cout << chat.getBrain()->getIdea(2) << std::endl;
+	std::cout << chat2.getBrain()->getIdea(0) << std::endl;
+	std::cout << chat2.getBrain()->getIdea(1) << std::endl;
+	std::cout << chat2.getBrain()->getIdea(2) << std::endl;
+
 	return 0;
 }

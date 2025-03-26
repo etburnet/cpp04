@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:49 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/19 15:33:01 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 16:57:41 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,9 @@ Dog::~Dog()
 Brain* Dog::getBrain()
 {
 	return(this->cerveaux);
+}
+
+void Dog::makeSound() const
+{
+	std::cout << "wouuf" << std::endl;
 }

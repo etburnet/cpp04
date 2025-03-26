@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:53:02 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:48:29 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 13:10:38 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 
 class Ice : public AMateria
 {
-	private:
-		
 	public:
 		Ice();
 		Ice(const Ice&);

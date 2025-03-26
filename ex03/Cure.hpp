@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:52:57 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:48:47 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 13:11:46 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@
 #include <iostream>
 
 class Cure : public AMateria
-{
-	private:
-		
+{	
 	public:
 		Cure();
 		Cure(const Cure&);

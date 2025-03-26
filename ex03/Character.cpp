@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:56:25 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/17 14:50:47 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 17:27:53 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,7 @@ void Character::equip(AMateria* m)
 	while (i < 4 && inventaire[i] != NULL)
 		i++;
 	if (i < 4)
-	{
-		// std::cout << "Equip " << i << std::endl;
 		inventaire[i] = m;
-	}
 	else
 		std::cout << "Inventory is full." << std::endl;
 }
@@ -73,10 +70,7 @@ void Character::equip(AMateria* m)
 void Character::unequip(int idx)
 {
 	if (idx >= 0 && idx < 4)
-	{
-		// std::cout << "Unequip" << std::endl;
 		this->inventaire[idx] = NULL;
-	}
 }
 
 void Character::use(int idx, ICharacter& target)

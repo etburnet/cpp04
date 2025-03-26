@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:52:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:48:35 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 17:07:50 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,4 @@ class ICharacter
 		virtual void equip(AMateria* m) = 0;
 		virtual void unequip(int idx) = 0;
 		virtual void use(int idx, ICharacter& target) = 0;
-		virtual AMateria *getInventaire(int idx) = 0;
 };

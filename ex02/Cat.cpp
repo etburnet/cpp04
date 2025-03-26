@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:25:46 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/19 15:32:47 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 16:57:50 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,9 @@ Cat::~Cat()
 Brain* Cat::getBrain()
 {
 	return(this->cerveaux);
+}
+
+void Cat::makeSound() const
+{
+	std::cout << "Miaou" << std::endl;
 }

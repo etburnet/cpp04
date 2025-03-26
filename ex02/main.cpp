@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:24 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/19 16:07:28 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/25 09:23:38 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,15 @@
 
 int main()
 {
-	//Animal mimi;
+	std::cout << std::endl;
+	std::cout << "-------------Main sujet-------------" << std::endl;
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	delete i;
 	delete j;
 
 	std::cout << std::endl;
-
+	std::cout << "-------------Demande sujet tableau-------------" << std::endl;
 	size_t tab_size = 6;
 	const Animal* Animaux[tab_size];
 	for (size_t i = 0; i < tab_size; i++)
@@ -38,28 +39,29 @@ int main()
 		delete Animaux[k];
 	}
 
-	std::cout << std::endl;
-
+	// std::cout << std::endl;
+	// std::cout << "-------------Constructeur de copie/operateu d'assignation-------------" << std::endl;
 	// Animal test;
 	// Cat chat;
 	// test = chat;
 	// Animal test1(test);
 	// Animal test2;
-
 	// test2 = test;
-
 	// std::cout << test.getType() << " " << std::endl;
 	// std::cout << test1.getType() << " " << std::endl;
 	// std::cout << test2.getType() << " " << std::endl;
 
+	std::cout << std::endl;
+	std::cout << "-------------Utilisation brain-------------" << std::endl;
 	Cat chat;
-
 	chat.getBrain()->setIdea("coucou");
 	chat.getBrain()->setIdea("hey");
 
 	std::cout << chat.getBrain()->getIdea(0) << std::endl;
 	std::cout << chat.getBrain()->getIdea(1) << std::endl;
 
+	std::cout << std::endl;
+	std::cout << "-------------Duplication Brain-------------" << std::endl;
 	Cat chat2(chat);
 
 	chat.getBrain()->setIdea("cv");

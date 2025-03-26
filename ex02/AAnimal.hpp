@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:22:17 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/18 13:47:26 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 18:01:03 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 class Animal
 {
 	protected:
-		Animal();
 		std::string type;
 		std::string sound;
 	public:
+		Animal();
 		Animal(const Animal&);
 		Animal& operator=(const Animal&);
-		virtual ~Animal();
+		virtual ~Animal() = 0;
 		std::string getType() const;
-		void makeSound() const;
+		virtual void makeSound() const;
 };

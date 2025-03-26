@@ -6,14 +6,14 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 13:14:30 by eburnet           #+#    #+#             */
-/*   Updated: 2025/02/10 11:32:37 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/03/24 18:04:31 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal(/* args */)
+WrongAnimal::WrongAnimal()
 {
 	std::cout << "WrongAnimal Constructor Called" << std::endl;
 }
@@ -27,7 +27,6 @@ WrongAnimal::WrongAnimal(const WrongAnimal &other)
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal &other)
 {
 	std::cout << "WrongAnimal Copy assignment operator Called" << std::endl;
-	this->sound = other.sound;
 	this->type = other.type;
 	return (*this);
 }
@@ -44,5 +43,5 @@ std::string WrongAnimal::getType() const
 
 void WrongAnimal::makeSound() const
 {
-	std::cout << this->sound << std::endl;
+	std::cout << "son" << std::endl;
 }
